@@ -1,11 +1,11 @@
-// public class Mai_4b_Class_Methods_Main {
-        public String fname = "John";
-        public int age = 24;
-        public abstract void study(); // abstract method
-      }
-      
-      // Subclass (inherit from Main)
-      class Student extends _4b_Class_Methods_Main
+//// public class Mai_4b_Class_Methods_Main {
+//        public String fname = "John";
+//        public int age = 24;
+//        public abstract void study(); // abstract method
+//      }
+//
+//      // Subclass (inherit from Main)
+//      class Student extends _4b_Class_Methods_Main
 
 // ===========================================================================================================================================================================
 // You can force someone to enter a number in Java by repeatedly prompting them until they enter a valid number. You can achieve this using a loop along with input validation. 
@@ -117,19 +117,19 @@
 // ===========================================================================================================================================================================
 
 // ===========================================================================================================================================================================
-public class Main {
-  public static void main(String[] args) {
-    int result = sum(5, 10);
-    System.out.println(result);
-  }
-  public static int sum(int start, int end) {
-    if (end > start) {
-      return end + sum(start, end - 1);
-    } else {
-      return end;
-    }
-  }
-}
+//public class Main {
+//  public static void main(String[] args) {
+//    int result = sum(5, 10);
+//    System.out.println(result);
+//  }
+//  public static int sum(int start, int end) {
+//    if (end > start) {
+//      return end + sum(start, end - 1);
+//    } else {
+//      return end;
+//    }
+//  }
+//}
 
 // ===========================================================================================================================================================================
 

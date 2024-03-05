@@ -24,14 +24,14 @@
 //===========================================================================================================================================================================
 import java.util.Scanner;
 
-public class _5a_Encapsulation_BankAccount {
-    
+public class _5b_Encapsulation_BankAccount {
+
     private String accountNumber;
     private String accountHolderName;
     private double balance;
 
-    // Constructor -- constructor with validation (optional) -- for initial values 
-    public _5a_Encapsulation_BankAccount(String accountNumber, String name, double initialBalance) {
+    // Constructor -- constructor with validation (optional) -- for initial values
+    public _5b_Encapsulation_BankAccount(String accountNumber, String name, double initialBalance) {
         this.accountNumber = accountNumber;
         this.accountHolderName = name;
         this.balance = initialBalance;
@@ -120,7 +120,7 @@ public class _5a_Encapsulation_BankAccount {
     // Main method to demonstrate encapsulation
     public static void main(String[] args) {
         // Create a new bank account
-        _5a_Encapsulation_BankAccount account = new  _5a_Encapsulation_BankAccount("123456789","John Doe", 1000.0);
+        _5b_Encapsulation_BankAccount account = new _5b_Encapsulation_BankAccount("123456789","John Doe", 1000.0);
 
         // Display account details
         System.out.println();
