@@ -13,3 +13,6 @@ superclass (parent) - the class being inherited from
     - if there were attributes set to a private access modifier, the subclasses(children) would NOT be able to access them. since these private attributes can only accessible within the declared class
 - It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
 - Abstraction and Polymorphism, use inherited methods to perform different tasks.
+
+
+
