@@ -1,4 +1,4 @@
-package calculator;
+package _3_Packages.calculator;
 public class _1b_Advance_Calculator extends _1a_Calculator{
 
         public int mul(int n1, int n2){

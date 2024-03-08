@@ -1,0 +1,2 @@
+1. is there multiple inheritance is java? ANS: NO. reason because of ambiguity. lets say Class A{}, extends clas B{}, and C. if A{} has method x() and B{} has method x() then this will cause issue
+2. is there Miltilevel Inheritance in java: YES: this is when A{} extends B{} and B extends C{}. the A has all of both A{} nad B{}

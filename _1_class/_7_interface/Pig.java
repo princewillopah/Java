@@ -1,6 +1,6 @@
-import _7_Interface._1_Animal;
+//import _7_interface.Animal;
   // Pig "implements" the Animal interface
-  public class _1_Pig implements _1_Animal {
+  public class Pig implements Animal {
     public void animalSound() {
       // The body of animalSound() is provided here
       System.out.println("The pig says: wee wee");

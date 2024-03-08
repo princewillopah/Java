@@ -1,4 +1,6 @@
-public class _1b_Advance_Calculator extends _1a_Calculator{
+package _4_Inheritance_and_inner_class.Inheritance1;
+
+public class B extends A{
 
         public int mul(int n1, int n2){
             return n1 * n2;
