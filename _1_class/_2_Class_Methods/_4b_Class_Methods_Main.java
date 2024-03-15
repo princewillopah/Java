@@ -1,4 +1,6 @@
-    abstract class Main {
+package _2_Class_Methods;
+
+abstract class Main {
         public String fname = "John";
         public int age = 24;
         public abstract void study(); // abstract method

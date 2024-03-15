@@ -1,3 +1,5 @@
+package _2_Class_Methods;
+
 public class _4a_Class_attributes {
     //" _4Classes_1" with two attributes: x1.x2,3 and name
 
