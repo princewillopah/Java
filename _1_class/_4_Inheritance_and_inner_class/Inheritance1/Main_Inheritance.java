@@ -6,11 +6,11 @@ public class Main_Inheritance {
 
         C obj = new C();
 
-        System.out.println(obj.add(4, 2)); // Inherited from _1a_Calculator
-        System.out.println(obj.subtract(4, 2)); // Inherited from _1a_Calculator
-        System.out.println(obj.mul(4, 2));  // Inherited from _1b_Advance_Calculator
-        System.out.println(obj.div(4, 2));  // Inherited from _1b_Advance_Calculator
-        System.out.println(obj.powr(4, 2));
+        System.out.println(obj.add(4, 2)); //  B Inherited from A
+        System.out.println(obj.subtract(4, 2)); // B Inherited from A
+        System.out.println(obj.mul(4, 2));  // C Inherited from B
+        System.out.println(obj.div(4, 2));  // C Inherited from B
+        System.out.println(obj.powr(4, 2)); // this is from C
     }
 
 }

@@ -1,0 +1,54 @@
+//===========================================================================================================================================================================
+//===========================================================================================================================================================================
+// Java Polymorphism
+// Polymorphism is the ability of an object to take on many forms
+// Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance
+//  While Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+// An overridden method is essentially hidden in the parent class, and is not invoked unless the child class uses the super keyword within the overriding method.
+
+
+//Compile Time Polymorphism(AKA static polymorphism): it is implemented by method overloading.
+// Run Time Polymorphism( AKA dynamic method dispatch): it is implemented by the method overriding.
+//
+//
+//
+//
+//
+//
+//
+//
+
+//===========================================================================================================================================================================
+Animal package
+//===========================================================================================================================================================================
+ //////For example below, think of a superclass called Animal that has a method called animalSound().
+ ///////Subclasses of Animals could be Pigs, Cats, Dogs, Birds - And they also have their own implementation of an animal sound (the pig oinks, and the cat meows, etc.):
+
+ //===========================================================================================================================================================================
+Calc
+ //===========================================================================================================================================================================
+ This example has multiple methods having the same name to achieve the concept of compile-time polymorphism in Java.
+
+//===========================================================================================================================================================================
+_6_Polymorphism.Run_Time_Polymorphism2 package
+//===========================================================================================================================================================================
+ Dynamic binding refers to the process in which linking between method call and method implementation is resolved at run time (or, a process of calling an overridden method at run time).
+ Dynamic binding is also known as run-time polymorphism or late binding. Dynamic binding uses objects to resolve binding.
+
+In the below example, you can see that even though e is a type of Employee it runs the mailCheck() method in the Salary class. The reason for this is:
+In compile time, the check is made on the reference type. However, in the runtime, JVM figures out the object type and would run the method that belongs to that particular object.
+
+Therefore, in the below example, the program will compile properly since Employee class has the method mailCheck. Then, at the runtime, it runs the method specific for that object.
+
+Salary class extends Employee class
+implementing the  instantiation two Salary objects
+        Salary s = new Salary("Mohd Mohtashim", "Ambehta, UP", 3, 3600.00); // using Salary reference s
+        s.mailCheck();
+    //While invoking s.mailCheck(), the compiler sees mailCheck() in the Salary class at compile time, and the JVM invokes mailCheck() in the Salary class at run time.
+
+     // Dynamic Binding:
+        Employee e = new Salary("John Adams", "Boston, MA", 2, 2400.00); //e using Employee(Parent) reference  but Salary(child) object
+        e.mailCheck(); // runs the method in Salary class(not Employee class)
+     //mailCheck() on e is quite different because e is an Employee reference. When the compiler sees e.mailCheck(), the compiler sees the mailCheck() method in the Employee class.
+     //Here, at compile time, the compiler used mailCheck() in Employee to validate this statement. At run time, however, the JVM invokes mailCheck() in the Salary class.
+    // This behavior is referred to as virtual method invocation, and these methods are referred to as virtual methods. An overridden method is invoked at run time, no matter what data type the reference is that was used in the source code at compile time.

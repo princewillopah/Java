@@ -1,3 +1,5 @@
+package _7_interface;
+
 //import _7_interface.Animal;
   // Pig "implements" the Animal interface
   public class Pig implements Animal {
