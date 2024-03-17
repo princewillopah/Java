@@ -1,12 +1,12 @@
+package _5_Abstraction.shapes;
 
-// _10b_Abstract_Class_Rectangle_SubClass is a Concrete subclass representing a rectangle
-class _10b_Abstract_Class_Rectangle_SubClass extends _10b_Abstract_Class_Shape_AbstractClass{
-
+// Concrete subclass representing a rectangle
+class Rectangle extends Shape {
     private double width;
     private double height;
 
     // Constructor
-    public _10b_Abstract_Class_Rectangle_SubClass(double width, double height) {
+    public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
     }
@@ -21,5 +21,4 @@ class _10b_Abstract_Class_Rectangle_SubClass extends _10b_Abstract_Class_Shape_A
     public double calculatePerimeter() {
         return 2 * (width + height);
     }
-
 }

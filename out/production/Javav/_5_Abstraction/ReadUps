@@ -1,0 +1,31 @@
+_10b_Abstract_Class_Shape_AbstractClass is the abstract class
+Both _10b_Abstract_Class_Rectangle_SubClass class and _10b_Abstract_Class_Circle_SubClass class are subclasses that are extending the abstract class _10b_Abstract_Class_Shape_AbstractClass
+
+_10b_Abstract_Class_main_Class is the  Main class to demonstrate abstract classes and methods
+
+
+subclass (child) - the class that inherits from another class
+superclass (parent) - the class being inherited from
+
+
+- there are no attributes in the abstract(parent) class.
+    - if there were attributes set to a protected access modifier, the subclasses(children) would be able to access them.
+    - if there were attributes set to a private access modifier, the subclasses(children) would NOT be able to access them. since these private attributes can only accessible within the declared class
+- It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
+- Abstraction and Polymorphism, use inherited methods to perform different tasks.
+
+
+--------------------------------------------------------------------------------
+TERMS
+---------------------------------------------------------------------------------
+- Abstract methods can only be defined in abstract class
+- To use an abstract class, you have to inherit it from another class, provide implementations to the abstract methods in it.
+- Any subclass that extend a abstract class must implement/override all the abstract methods in the abstract class it extend. that is, If you inherit an abstract class, you have to provide implementations to all the abstract methods in it
+    if the subclass does not want to implement all the abstract method in the super abstract class, then the subclass must also be converted to an abstract class.
+    thus, only an abstract class that extend another abstract class can implement part of the abstract methods. but then, the abstract subclass can not be instantiated.
+    to fix this you have to create a non-abstract class that extends the abstract subclass, so you can instantiate the new class
+- Abstract class can have only abstract methods, or only non-abstract methods  or both. Java abstract classes may or may not contain abstract methods,
+    i.e., methods without body ( public void get(); ). But, if a class has at least one abstract method, then the class must be declared abstract.
+- If a class is declared abstract, it cannot be instantiated. you can not create an object from an abstract class. that it, you can not instantiate an abstract class
+
+

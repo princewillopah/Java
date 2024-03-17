@@ -1,17 +1,22 @@
-// Abstract class representing a shape
-abstract class Shape {
+package _5_Abstraction;//_10b_Abstract_Class_main_Class is the  Main class to demonstrate abstract classes and methods
+
+
+
+//  Shape_Abstract_Class is Abstract class representing a shape
+abstract class Shape_Abstract_Class {
     // Abstract methods for calculating area and perimeter
     public abstract double calculateArea();
     public abstract double calculatePerimeter();
 }
 
-// Concrete subclass representing a rectangle
-class Rectangle extends Shape {
+// Rectangle_SubClass is a Concrete subclass representing a rectangle
+class Rectangle_SubClass extends Shape_Abstract_Class {
+
     private double width;
     private double height;
 
     // Constructor
-    public Rectangle(double width, double height) {
+    public Rectangle_SubClass(double width, double height) {
         this.width = width;
         this.height = height;
     }
@@ -26,14 +31,16 @@ class Rectangle extends Shape {
     public double calculatePerimeter() {
         return 2 * (width + height);
     }
+
 }
 
-// Concrete subclass representing a circle
-class Circle extends Shape {
+
+//  Circle_SubClass  is a Concrete subclass representing a circle
+class Circle_SubClass extends Shape_Abstract_Class {
     private double radius;
 
     // Constructor
-    public Circle(double radius) {
+    public Circle_SubClass(double radius) {
         this.radius = radius;
     }
 
@@ -47,14 +54,14 @@ class Circle extends Shape {
     public double calculatePerimeter() {
         return 2 * Math.PI * radius;
     }
+
 }
 
-// Main class to demonstrate abstract classes and methods
-public class _10a_Abstract_Class {
+public class Main_Class {
     public static void main(String[] args) {
         // Creating objects of Rectangle and Circle
-        Rectangle rectangle = new Rectangle(5, 3);
-        Circle circle = new Circle(4);
+        Rectangle_SubClass rectangle = new Rectangle_SubClass(5, 3);
+        Circle_SubClass circle = new Circle_SubClass(4);
 
         // Calculating and printing area and perimeter of shapes
         System.out.println("Rectangle:");
@@ -66,5 +73,3 @@ public class _10a_Abstract_Class {
         System.out.println("Perimeter: " + circle.calculatePerimeter());
     }
 }
-
-

@@ -1,9 +1,11 @@
-//  _10b_Abstract_Class_Circle_SubClass  is a Concrete subclass representing a circle
-class _10b_Abstract_Class_Circle_SubClass extends _10b_Abstract_Class_Shape_AbstractClass{
+package _5_Abstraction.shapes;
+
+// Concrete subclass representing a circle
+class Circle extends Shape {
     private double radius;
 
     // Constructor
-    public _10b_Abstract_Class_Circle_SubClass(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
@@ -17,5 +19,4 @@ class _10b_Abstract_Class_Circle_SubClass extends _10b_Abstract_Class_Shape_Abst
     public double calculatePerimeter() {
         return 2 * Math.PI * radius;
     }
-
 }

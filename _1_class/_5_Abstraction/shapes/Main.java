@@ -1,10 +1,12 @@
-//_10b_Abstract_Class_main_Class is the  Main class to demonstrate abstract classes and methods
+package _5_Abstraction.shapes;
 
-public class _10b_Abstract_Class_main_Class {
+
+// Main class to demonstrate abstract classes and methods
+public class Main {
     public static void main(String[] args) {
         // Creating objects of Rectangle and Circle
-        _10b_Abstract_Class_Rectangle_SubClass rectangle = new _10b_Abstract_Class_Rectangle_SubClass(5, 3);
-        _10b_Abstract_Class_Circle_SubClass circle = new _10b_Abstract_Class_Circle_SubClass(4);
+        Rectangle rectangle = new Rectangle(5, 3);
+        Circle circle = new Circle(4);
 
         // Calculating and printing area and perimeter of shapes
         System.out.println("Rectangle:");
@@ -16,3 +18,5 @@ public class _10b_Abstract_Class_main_Class {
         System.out.println("Perimeter: " + circle.calculatePerimeter());
     }
 }
+
+
